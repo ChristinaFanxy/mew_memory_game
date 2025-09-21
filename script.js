@@ -136,7 +136,14 @@ function createBoard() {
     inner.appendChild(back);
     card.appendChild(inner);
 
+    // Listen for click events on desktop browsers
     card.addEventListener('click', flipCard);
+    // Listen for touchstart on touch devices (e.g. iPad/iPhone)
+    card.addEventListener('touchstart', function (e) {
+      // Prevent the simulated mouse events that follow a touch
+      e.preventDefault();
+      flipCard.call(card);
+    });
     board.appendChild(card);
   });
 }
