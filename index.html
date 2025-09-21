@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat in a dogs world</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Page title -->
+      <h1>Cat in a dogs world</h1>
+
+      <!-- Timer display -->
+      <div id="timer">Time: 0s</div>
+
+      <!-- Grid where the cards will be rendered -->
+      <div id="game-board" class="game-board"></div>
+
+      <!-- Congratulations message (hidden by default) -->
+      <div id="congrats" class="congrats hidden">
+        <span>Congratulations!</span><br />
+        <span id="final-time"></span>
+      </div>
+    </div>
+
+    <!-- Game logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
